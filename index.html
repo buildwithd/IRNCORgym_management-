@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IronCore Gym Management System</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<aside><h1>IRON<span>CORE</span></h1><nav id="nav"></nav></aside>
+<div class="main">
+<header><div class="gw"><input id="gs" placeholder="Global search: members, trainers..." oninput="gsearch(this.value)"><div id="gres"></div></div>
+<button class="btn ghost" onclick="notifs()">🔔 Expiring <b id="nc">0</b></button></header>
+<main id="app"></main></div>
+<div id="modal" onclick="if(event.target==this)closeM()"></div><div id="toast"></div>
+<script src="app.js"></script></body></html>
